@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.menu{
+    position: relative;
+    width: 20%;
+    height: 100vh;
+    background-color: #607D8B;
+    color: #FFF;
+}
+.menu .items{
+    padding: 10px;
+}
+.menu .items .item{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+.menu .items .item:hover,
+.menu .items .item.active{
+    background-color: gray;
+    border-radius: 9px;
+}
+.menu .items .item img{
+    width: 60px;
+    margin-right: 35px;
+    border-radius: 15px;
+}
+.menu .items .item .icon{
+    font-size: 25px;
+    margin: 15px 50px 15px 0;
+}
+.menu .items .log{
+    background-color: #F00;
+    padding: 0 10px;
+    font-size: 20px;
+    width: 200px;
+    height: 35px;
+    border-radius: 7px;
+    position: absolute;
+    top: 90%;
+}
+.main{
+    position: absolute;
+    width: 80%;
+    height: 100vh;
+    background-color: #000;
+    left: 20%;
+    top: 0;
+}
+.main .container{
+    padding: 10px;
+    margin-left: 20px;
+    color: #FFF;
+}
+.main .container .dash,.pro{
+    background-color: #0000ffc9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.main .container .boxes{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.main .container .boxes .box{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 10px;
+    background-color: #607D8B;
+    padding: 20px;
+    border-radius: 5px;
+}
+.main .container .boxes .box:hover{
+    background-color: gray;
+}
+.main .container .boxes .box:first-child{
+    margin-left: -13px;
+}
+.main .container .boxes .box .icon{
+    margin-right: 50px;
+    font-size: 30px;
+}
+table{
+    width: 100%;
+    table-layout: fixed;
+}
+table tr th{
+    background-color: blue;
+    margin-right: 15px;
+    border-radius: 2px;
+}
+table tr td{
+    text-align: center;
+    padding: 10px;
+    background-color: #EEE;
+    color: #000;
+    font-size: 15px;
+}
